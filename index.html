@@ -4,90 +4,62 @@
   <meta charset="utf-8">
   <title>HydroVolts Solar Leaf™ – Canadian‑Made Clean Power</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- Tailwind via CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet" />
-  <!-- Google Font for a sharper look -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <!-- Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body{font-family:"Inter",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
-    /* fallback grid in case Tailwind fails to load */
-    @media(min-width:768px){
-      .img-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-    }
+    body{font-family:"Inter",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
   </style>
 </head>
 
-<body class="bg-slate-50 text-slate-800 leading-relaxed antialiased">
+<body class="bg-slate-50 text-slate-800 leading-relaxed antialiased overflow-x-hidden">
 
-  <!-- HERO with subtle video background -->
-  <header class="relative overflow-hidden">
-    <video
-      class="absolute inset-0 w-full h-full object-cover object-center opacity-20"
-      src="promo.webm" autoplay loop muted playsinline></video>
-
-    <div class="relative z-10 mx-auto max-w-7xl px-6 py-28 lg:px-8 lg:py-40 text-center text-white">
-      <h1 class="text-4xl sm:text-6xl font-extrabold drop-shadow-xl">
-        HydroVolts Solar Leaf™
-      </h1>
-      <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-2xl">
-        From alpine campsites to Arctic hamlets, HydroVolts unlocks
-        <strong class="font-semibold">24 / 7</strong> renewable energy—proudly engineered &amp; built in Canada.
-      </p>
-      <a href="#contact"
-         class="mt-10 inline-block rounded-xl bg-white/10 px-10 py-3 text-base font-semibold ring-2 ring-white/30
-                backdrop-blur hover:bg-white/20 transition">
-        Talk to Us
-      </a>
-    </div>
+  <!-- HERO -->
+  <header class="bg-gradient-to-br from-cyan-600 via-sky-500 to-blue-600 text-white text-center py-24 lg:py-32 px-6">
+    <h1 class="text-4xl sm:text-6xl font-extrabold drop-shadow-md">HydroVolts Solar Leaf™</h1>
+    <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-2xl">From alpine campsites to Arctic hamlets, HydroVolts unlocks <strong class="font-semibold">24 / 7</strong> renewable energy—proudly engineered &amp; built in Canada.</p>
+    <a href="#contact" class="mt-10 inline-block rounded-xl bg-white/10 px-8 py-3 font-semibold ring-2 ring-white/30 hover:bg-white/20 transition">Contact Us</a>
   </header>
 
   <!-- PRODUCT IMAGES -->
-  <section id="product" class="mx-auto max-w-6xl px-6 py-20">
-    <div class="img-grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-      <img src="HV-1.png" alt="Solar Leaf perspective"
-           class="rounded-2xl shadow-xl object-cover w-full h-full">
-      <div class="relative">
-        <img src="HV-2.png" alt="Solar Leaf front"
-             class="rounded-2xl shadow-xl object-cover w-full h-full">
+  <section id="product" class="mx-auto max-w-5xl px-6 py-20">
+    <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 justify-center">
+      <img src="HV-1.png" alt="Solar Leaf side view" class="flex-1 rounded-2xl shadow-lg object-cover w-full max-h-80">
+      <div class="relative flex-1 max-h-80">
+        <img src="HV-2.png" alt="Solar Leaf front view" class="rounded-2xl shadow-lg object-cover w-full h-full">
         <!-- Maple overlay -->
-        <img src="maple.png" alt="Canadian Maple"
-             class="pointer-events-none absolute -top-14 left-1/2 -translate-x-1/2 w-28 sm:w-36 drop-shadow-2xl">
+        <img src="maple.png" alt="Canadian Maple" class="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2 w-24 sm:w-28 drop-shadow-2xl">
       </div>
-      <img src="HV-3.png" alt="Solar Leaf reverse"
-           class="rounded-2xl shadow-xl object-cover w-full h-full">
+      <img src="HV-3.png" alt="Solar Leaf reverse view" class="flex-1 rounded-2xl shadow-lg object-cover w-full max-h-80">
     </div>
   </section>
 
-  <!-- 3‑STEP EXPLAINER -->
+  <!-- THREE‑STEP TABLE -->
   <section id="how" class="bg-white py-20 px-6">
-    <h2 class="text-center text-3xl font-bold mb-14">How It Works</h2>
-    <div class="mx-auto max-w-6xl grid md:grid-cols-3 gap-10">
-      <article class="relative overflow-hidden rounded-2xl bg-slate-100 p-10 shadow-xl">
-        <span class="absolute -top-6 left-4 text-8xl font-extrabold text-cyan-600/10 select-none">1</span>
-        <h3 class="font-semibold text-xl mt-4">Harvest the Sun</h3>
-        <p class="mt-3 text-sm">Biomimetic “leaves” capture daylight and split water—no fragile glass to shatter, no moving parts to seize in snow.</p>
-      </article>
-      <article class="relative overflow-hidden rounded-2xl bg-slate-100 p-10 shadow-xl">
-        <span class="absolute -top-6 left-4 text-8xl font-extrabold text-cyan-600/10 select-none">2</span>
-        <h3 class="font-semibold text-xl mt-4">Store Safely</h3>
-        <p class="mt-3 text-sm">Solid‑state hydride beads lock hydrogen at low pressure; earth‑abundant catalysts keep costs low and supply chains local.</p>
-      </article>
-      <article class="relative overflow-hidden rounded-2xl bg-slate-100 p-10 shadow-xl">
-        <span class="absolute -top-6 left-4 text-8xl font-extrabold text-cyan-600/10 select-none">3</span>
-        <h3 class="font-semibold text-xl mt-4">Power Anytime</h3>
-        <p class="mt-3 text-sm">Fuel‑cell stack delivers silent, emission‑free electricity after dark, through storms, or across long Canadian winters.</p>
-      </article>
+    <h2 class="text-center text-3xl font-bold mb-14">Three Simple Steps</h2>
+    <div class="overflow-x-auto">
+      <table class="mx-auto w-full max-w-5xl text-left border-collapse">
+        <thead class="bg-cyan-700 text-white">
+          <tr><th class="p-3">Step</th><th class="p-3">Headline</th><th class="p-3">What Happens</th></tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 bg-white text-sm">
+          <tr><td class="p-3 font-semibold">1</td><td class="p-3 font-semibold">Harvest the Sun</td><td class="p-3">Biomimetic leaves capture daylight and split water—no fragile glass to shatter, no moving parts to seize in snow.</td></tr>
+          <tr><td class="p-3 font-semibold">2</td><td class="p-3 font-semibold">Store Safely</td><td class="p-3">Solid‑state hydride beads lock hydrogen at low pressure; earth‑abundant catalysts keep costs low and supply chains local.</td></tr>
+          <tr><td class="p-3 font-semibold">3</td><td class="p-3 font-semibold">Power Anytime</td><td class="p-3">Fuel‑cell stack delivers silent, emission‑free electricity after dark, through storms, or across long Canadian winters.</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
   <!-- WHO WE POWER -->
   <section id="customers" class="py-24 px-6">
-    <h2 class="text-center text-3xl font-bold mb-14">Who We Power</h2>
+    <h2 class="text-center text-3xl font-bold mb-14">Who We Power</h2>
     <div class="mx-auto max-w-6xl grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-      <div><h3 class="font-semibold mb-2">Campers &amp; Overlanders</h3><p>Charge lanterns, GPS units, e‑bikes or induction cooktops without lugging propane canisters or noisy generators.</p></div>
-      <div><h3 class="font-semibold mb-2">Off‑Grid &amp; Indigenous Communities</h3><p>Supplement diesel with a modular system that thrives in −40 °C blizzards, slashing fuel use while creating local jobs.</p></div>
-      <div><h3 class="font-semibold mb-2">Homeless &amp; Urban Resilience</h3><p>Deploy compact “Solar Leaf™ shelters” that supply lighting, phone charging and Wi‑Fi—boosting safety and connectivity.</p></div>
-      <div><h3 class="font-semibold mb-2">Disaster‑Relief &amp; Wildfire Crews</h3><p>Fly‑in kits power radios, medical fridges and water‑pumps when the grid is down.</p></div>
+      <div><h3 class="font-semibold mb-2">Campers &amp; Overlanders</h3><p>Charge lanterns, GPS units, e‑bikes or induction cooktops without lugging propane canisters or noisy generators.</p></div>
+      <div><h3 class="font-semibold mb-2">Off‑Grid &amp; Indigenous Communities</h3><p>Supplement diesel with a modular system that thrives in −40 °C blizzards, slashing fuel use while creating local jobs.</p></div>
+      <div><h3 class="font-semibold mb-2">Homeless &amp; Urban Resilience</h3><p>Deploy compact Solar Leaf™ shelters that supply lighting, phone charging and Wi‑Fi—boosting safety and connectivity.</p></div>
+      <div><h3 class="font-semibold mb-2">Disaster‑Relief &amp; Wildfire Crews</h3><p>Fly‑in kits power radios, medical fridges and water‑pumps when the grid is down.</p></div>
     </div>
   </section>
 
@@ -95,9 +67,9 @@
   <section id="canadian" class="bg-gradient-to-r from-slate-100 to-slate-50 py-24 px-6">
     <h2 class="text-center text-3xl font-bold mb-12">Why Canadian‑Made Matters</h2>
     <ul class="mx-auto max-w-5xl list-disc space-y-4 pl-6 text-lg leading-7">
-      <li><strong>Designed for Harsh Climates&nbsp;–</strong> Tested from coastal rain to prairie ice fog.</li>
-      <li><strong>Local Supply Chains&nbsp;–</strong> Nickel‑iron catalysts, aluminum enclosures and hydride alloys are sourced &amp; fabricated domestically.</li>
-      <li><strong>Regulatory Peace of Mind&nbsp;–</strong> Certified to CSA C22.2 and Transport Canada guidelines—no special permits for remote transport.</li>
+      <li><strong>Designed for Harsh Climates –</strong> Tested from coastal rain to prairie ice fog.</li>
+      <li><strong>Local Supply Chains –</strong> Nickel‑iron catalysts, aluminum enclosures and hydride alloys are sourced &amp; fabricated domestically.</li>
+      <li><strong>Regulatory Peace of Mind –</strong> Certified to CSA C22.2 and Transport Canada guidelines—no special permits required.</li>
     </ul>
   </section>
 
@@ -106,14 +78,12 @@
     <h2 class="text-center text-3xl font-bold mb-14">Roadmap to a Cleaner Canada</h2>
     <div class="overflow-x-auto">
       <table class="mx-auto w-full max-w-6xl border-collapse text-sm">
-        <thead class="bg-cyan-700 text-white">
-          <tr><th class="p-3">Year</th><th class="p-3">Milestone</th><th class="p-3">Impact</th></tr>
-        </thead>
+        <thead class="bg-cyan-700 text-white"><tr><th class="p-3">Year</th><th class="p-3">Milestone</th><th class="p-3">Impact</th></tr></thead>
         <tbody class="divide-y divide-slate-200 bg-white">
-          <tr><td class="p-3 font-semibold">2025</td><td class="p-3">Field Pilots<br><span class="text-slate-500">• 500 kits to outfitters &amp; parks<br>• 10 units in northern First Nations</span></td><td class="p-3">Validate reliability, train local technicians</td></tr>
-          <tr><td class="p-3 font-semibold">2026‑27</td><td class="p-3">Community Micro‑Grids<br><span class="text-slate-500">• Clustered arrays with smart meters</span></td><td class="p-3">60 % diesel displacement; up to 30 % lower energy costs</td></tr>
-          <tr><td class="p-3 font-semibold">2028</td><td class="p-3">Urban Resilience Roll‑out<br><span class="text-slate-500">• Municipal shelters &amp; pop‑up clinics</span></td><td class="p-3">Adds 8 MW of clean, portable emergency capacity</td></tr>
-          <tr><td class="p-3 font-semibold">2029+</td><td class="p-3">Net‑Zero Nation Assist<br><span class="text-slate-500">• 50 000 units / yr • Export to cold‑climate nations</span></td><td class="p-3">Thousands of jobs; drives 2030 emissions targets</td></tr>
+          <tr><td class="p-3 font-semibold">2025</td><td class="p-3">Field Pilots – 500 kits &amp; 10 northern demos</td><td class="p-3">Validate reliability; train local techs</td></tr>
+          <tr><td class="p-3 font-semibold">2026–27</td><td class="p-3">Community Micro‑Grids</td><td class="p-3">60 % diesel displacement; 30 % lower costs</td></tr>
+          <tr><td class="p-3 font-semibold">2028</td><td class="p-3">Urban Resilience Roll‑out</td><td class="p-3">Adds 8 MW portable emergency power</td></tr>
+          <tr><td class="p-3 font-semibold">2029+</td><td class="p-3">Net‑Zero Nation Assist – 50 000 units/yr</td><td class="p-3">Thousands of jobs; drives 2030 targets</td></tr>
         </tbody>
       </table>
     </div>
@@ -128,16 +98,11 @@
         <input name="name" required placeholder="Name" class="w-full rounded-lg p-3 text-slate-900">
         <input name="email" type="email" required placeholder="Email" class="w-full rounded-lg p-3 text-slate-900">
         <textarea name="message" required placeholder="Message" rows="4" class="w-full rounded-lg p-3 text-slate-900"></textarea>
-        <button type="submit" class="w-full rounded-lg bg-cyan-500 py-3 font-semibold hover:bg-cyan-600 transition">
-          Send Message
-        </button>
+        <button type="submit" class="w-full rounded-lg bg-cyan-500 py-3 font-semibold hover:bg-cyan-600 transition">Send Message</button>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-slate-800 text-slate-400 text-center py-6 text-sm">
-    © 2025 HydroVolts Inc. • Made in Canada
-  </footer>
+  <footer class="bg-slate-800 text-slate-400 text-center py-6 text-sm">© 2025 HydroVolts Inc. • Made in Canada</footer>
 </body>
 </html>
