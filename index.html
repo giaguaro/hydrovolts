@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HydroVolts – Clean power from water</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Hero -->
+  <section class="relative h-screen flex items-center justify-center">
+    <img src="hero.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+    <h1 class="relative z-10 text-5xl md:text-6xl font-bold bg-white/70 p-6 rounded-xl backdrop-blur-lg">
+      HydroVolts
+    </h1>
+  </section>
+
+  <!-- Video -->
+  <section class="max-w-5xl mx-auto my-16 px-4">
+    <video class="w-full rounded-xl shadow-lg" autoplay loop muted playsinline poster="hero.jpg">
+      <source src="promo.webm" type="video/webm">
+      <source src="promo.mp4"  type="video/mp4">
+      Sorry, your browser doesn’t support embedded video.
+    </video>
+  </section>
+
+  <!-- Description -->
+  <section class="max-w-3xl mx-auto px-4 pb-20 space-y-4 text-lg">
+    <p>Our engineered leaf turns flowing water into grid‑ready electricity with zero emissions.</p>
+    <p>Built in Canada, designed for remote communities, HydroVolts delivers sustainable power where diesel once ruled.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="max-w-xl mx-auto px-4 pb-24">
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+      <input name="name" required placeholder="Name" class="w-full border p-2 rounded">
+      <input name="email" type="email" required placeholder="Email" class="w-full border p-2 rounded">
+      <textarea name="message" required placeholder="How can we help?" class="w-full border p-2 rounded"></textarea>
+      <button class="px-4 py-2 bg-cyan-700 text-white rounded">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>
