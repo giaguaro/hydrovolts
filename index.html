@@ -42,15 +42,17 @@
 <!-- PRODUCT IMAGES -->
 <section id="product" class="relative pt-24 pb-20 px-6 grid-bg">
   <h2 class="sr-only">Product Gallery</h2>
-  <div class="mx-auto max-w-6xl grid sm:grid-cols-3 gap-6" data-aos="zoom-in-up">
-    <img src="HV-1.png" alt="Solar Leaf side view" class="leaf-img rounded-2xl shadow-xl w-full">
-    <div class="relative">
-      <img src="HV-2.png" alt="Solar Leaf front view" class="leaf-img rounded-2xl shadow-xl w-full">
-      <!-- Maple overlay -->
-      <img src="maple.png" alt="Canadian Maple"
-           class="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 w-28 sm:w-32 drop-shadow-2xl">
+  <!-- Force side‑by‑side on all viewports; horizontal scroll if too narrow -->
+  <div class="mx-auto max-w-6xl overflow-x-auto">
+    <div class="flex flex-row gap-6 justify-center min-w-[56rem]" data-aos="zoom-in-up">
+      <img src="HV-1.png" alt="Solar Leaf side view" class="leaf-img rounded-2xl shadow-xl">
+      <div class="relative">
+        <img src="HV-2.png" alt="Solar Leaf front view" class="leaf-img rounded-2xl shadow-xl">
+        <!-- Maple overlay -->
+        <img src="maple.png" alt="Canadian Maple" class="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 w-28 sm:w-32 drop-shadow-2xl">
+      </div>
+      <img src="HV-3.png" alt="Solar Leaf rear view" class="leaf-img rounded-2xl shadow-xl">
     </div>
-    <img src="HV-3.png" alt="Solar Leaf rear view" class="leaf-img rounded-2xl shadow-xl w-full">
   </div>
 </section>
 
@@ -90,7 +92,7 @@
 <!-- WHO WE POWER -->
 <section id="customers" class="relative py-28 px-6 grid-bg">
   <h2 class="text-center text-3xl font-bold mb-16 gradient-text">Who We Power</h2>
-  <div class="mx-auto max-w-6xl grid gap-14 sm:grid-cols-2 lg:grid-cols-4" data-aos="fade-up">
+  <div class="mx-auto max-w-6xl grid gap-14 sm:grid-cols-2 lg:grid-cols-4 text-center" data-aos="fade-up">
     <div><h3 class="font-semibold mb-2">Campers &amp; Overlanders</h3><p>Charge lanterns, GPS units, e-bikes or induction cooktops without lugging propane canisters or noisy generators.</p></div>
     <div><h3 class="font-semibold mb-2">Off-Grid &amp; Indigenous Communities</h3><p>Supplement diesel with a modular system that thrives in −40 °C blizzards, slashing fuel use while creating local jobs.</p></div>
     <div><h3 class="font-semibold mb-2">Homeless &amp; Urban Resilience</h3><p>Deploy compact Solar Leaf™ shelters that supply lighting, phone charging and Wi-Fi—boosting safety and connectivity.</p></div>
@@ -112,7 +114,7 @@
 <!-- CANADIAN BENEFITS -->
 <section id="canadian" class="bg-gradient-to-r from-slate-100 to-slate-50 py-28 px-6">
   <h2 class="text-center text-3xl font-bold mb-12 gradient-text">Why Canadian-Made Matters</h2>
-  <ul class="mx-auto max-w-5xl list-disc space-y-5 pl-6 text-lg leading-8" data-aos="fade-right">
+  <ul class="mx-auto max-w-5xl list-disc space-y-5 pl-6 text-lg leading-8 text-center" data-aos="fade-right">
     <li><strong>Designed for Harsh Climates –</strong> Tested from coastal rain to prairie ice fog.</li>
     <li><strong>Local Supply Chains –</strong> Nickel-iron catalysts, aluminum enclosures and hydride alloys are sourced &amp; fabricated domestically.</li>
     <li><strong>Regulatory Peace of Mind –</strong> Certified to CSA C22.2 and Transport Canada guidelines—no special permits required.</li>
@@ -139,39 +141,4 @@
           <td class="p-4 font-semibold">2026-27</td><td class="p-4">Community Micro-Grids</td><td class="p-4">60 % diesel displacement; 30 % lower costs</td>
         </tr>
         <tr class="bg-slate-50">
-          <td class="p-4 font-semibold">2028</td><td class="p-4">Urban Resilience Roll-out</td><td class="p-4">Adds 8 MW portable emergency power</td>
-        </tr>
-        <tr>
-          <td class="p-4 font-semibold">2029+</td><td class="p-4">Net-Zero Nation Assist – 50 000 units / yr</td><td class="p-4">Thousands of jobs; drives 2030 targets</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="relative bg-slate-900 text-white py-32 px-6">
-  <div class="mx-auto max-w-lg text-center">
-    <h2 class="text-3xl font-bold mb-6 gradient-text">Talk with Our Team</h2>
-    <p class="mb-10 text-slate-400">Investors, partners, or media—drop us a line and we’ll respond within one business day.</p>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5" data-aos="fade-up">
-      <input name="name" required placeholder="Name" class="w-full rounded-lg p-3 text-slate-900">
-      <input name="email" type="email" required placeholder="Email" class="w-full rounded-lg p-3 text-slate-900">
-      <textarea name="message" required placeholder="Message" rows="4" class="w-full rounded-lg p-3 text-slate-900"></textarea>
-      <button type="submit" class="w-full rounded-lg bg-cyan-500 py-3 font-semibold hover:bg-cyan-600 transition">Send Message</button>
-    </form>
-  </div>
-  <!-- diagonal top divider -->
-  <svg class="absolute top-0 left-0 w-full text-slate-50 rotate-180" viewBox="0 0 1440 100" preserveAspectRatio="none"><path fill="currentColor" d="M0,32L80,48C160,64,320,96,480,101.3C640,107,800,85,960,64C1120,43,1280,21,1360,10.7L1440,0L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path></svg>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-slate-800 text-slate-400 text-center py-6 text-sm">
-  © 2025 HydroVolts Inc. • Made in Canada
-</footer>
-
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init({once:true,duration:800});</script>
-</body>
-</html>
+          <td class="p-4 font-semibold">2028</td><td class="p-4">Urban Resilience Roll-out</td><td class="p-4">
